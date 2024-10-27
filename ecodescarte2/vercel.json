@@ -1,0 +1,11 @@
+{
+  "redirects": [
+    { "source": "/", "destination": "/home.html", "permanent": true }
+  ],
+  "rewrites": [
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/login", "destination": "/login.html" },
+    { "source": "/reciclagem", "destination": "/reciclagem.html" },
+    { "source": "/simulacao", "destination": "/simulacao.html" }
+  ]
+}
