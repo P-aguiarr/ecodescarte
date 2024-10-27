@@ -1,0 +1,258 @@
+/* Reset and Basic Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Altura mínima para ocupar a tela inteira */
+    padding-top: 80px; /* Espaço extra para o conteúdo não ficar escondido atrás do header fixo */
+}
+
+/* Wrapper para conteúdo principal */
+.main-content {
+    flex: 1; /* Expande para ocupar o espaço disponível */
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Header fixo no topo */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header nav {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+header .ecodescarte {
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: #333;
+    margin-right: auto;
+}
+
+header .nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+header .nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+}
+
+header .nav-links .login {
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* About Section */
+.about {
+    max-width: 1100px;
+    width: 100%;
+    padding: 40px;
+    background-color: #fff;
+    margin: 40px auto; /* Centraliza horizontalmente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: left; /* Alinhamento padrão à esquerda */
+}
+
+.about h1 {
+    font-size: 2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify; /* Justifica o texto dentro de "Sobre nós" */
+}
+
+/* Footer Section */
+.footer-section {
+    background-color: #4CAF50; /* Fundo verde */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    width: 100%;
+    margin-top: auto; /* Empurra o rodapé para o fim da página */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 80px; /* Tamanho do logo */
+    margin-bottom: 15px;
+}
+
+.footer-text h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-content p {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.newsletter-form input[type="email"] {
+    padding: 10px 20px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+}
+
+.newsletter-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #222;
+}
+
+.footer-links {
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    margin-top: 15px;
+}
+/* Exploratory Section */
+.exploratory-section {
+    padding: 50px;
+    background-color: #fff;
+    text-align: right; /* Centraliza o conteúdo da seção */
+}
+
+/* Container para os cards de notícias */
+.news-cards-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px; /* Espaçamento entre os cards */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilo para cada card de notícia */
+.news-card {
+    background-color: #fff;
+    width: 45%; /* Ajusta a largura para que ambos fiquem lado a lado */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.news-card-title {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+}
+
+.news-card-author {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.news-card-author img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
