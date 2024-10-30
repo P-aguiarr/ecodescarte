@@ -1,52 +1,92 @@
-body {
+/* Estilos Gerais */
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f0f8f5;
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+}
+
+/* Container Principal */
 .container {
-    background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    padding: 40px;
-    max-width: 600px;
     text-align: center;
+    padding: 20px;
 }
 
-.container h1 {
-    color: #4caf50;
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.container p {
-    color: #555;
-    font-size: 1.2rem;
-    margin: 0;
-}
-
-.container .icon {
-    font-size: 4rem;
-    color: #4caf50;
+.logo {
+    width: 100px;
     margin-bottom: 20px;
 }
 
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.thank-you-icon {
+    width: 80px;
+    margin: 20px 0;
+}
+
 .button {
-    display: inline-block;
-    margin-top: 20px;
     padding: 10px 20px;
-    background-color: #4caf50;
-    color: #ffffff;
-    text-decoration: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
     border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
 .button:hover {
-    background-color: #43a047;
+    background-color: #43A047;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links span {
+    color: #fff;
 }
