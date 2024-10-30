@@ -1,30 +1,96 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoDescarte - Obrigado pelo Cadastro</title>
-    <link rel="stylesheet" href="thanks.css">
-</head>
-<body>
+/* Estilos Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
 
-<div class="container">
-    <img src="img/logo.png" alt="EcoDescarte Logo" class="logo"> <!-- Coloque a imagem do logo na pasta img -->
-    <h1>Obrigada pelo seu cadastro!</h1>
-    <p>Agora você é parte do time EcoDescarte!</p>
-    <img src="img/thanks.png" alt="Thank You Icon" class="thank-you-icon"> <!-- Coloque a imagem de "Thanks" na pasta img -->
-    <button onclick="window.location.href='home.html'" class="button">Voltar para a tela principal</button>
-</div>
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+    padding-top: 20px;
+}
 
-<footer>
-    <p>Ecologia, Consciência e Sabedoria</p>
-    <div class="footer-links">
-        <a href="#">Políticas de Privacidade</a>
-        <span>|</span>
-        <a href="#">Termos & Condições</a>
-    </div>
-    <p>© 2024 EcoDescarte LTDA.</p>
-</footer>
+/* Container Principal */
+.container {
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+}
 
-</body>
-</html>
+.logo {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.thank-you-icon {
+    width: 80px;
+    margin: 20px 0;
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+.button:hover {
+    background-color: #43A047;
+}
+
+/* Rodapé */
+footer {
+    background-color: #4CAF50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+}
+
+footer p {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-links span {
+    color: #fff;
+}
