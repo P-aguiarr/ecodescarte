@@ -41,9 +41,10 @@ p {
     margin-bottom: 20px;
 }
 
-.thank-you-icon {
-    width: 80px;
-    margin: 20px 0;
+.thank-you-gif {
+    width: 100px; /* Ajuste o tamanho da imagem conforme necessário */
+    display: block;
+    margin: 0 auto 20px; /* Centraliza e adiciona espaçamento inferior */
 }
 
 .button {
